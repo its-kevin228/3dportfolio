@@ -2,6 +2,7 @@
 import React from 'react'
 import { words } from '../constants'
 import Button from '../components/Button'
+import HeroExperience from '../components/heroModel/HeroExperience'
 
 
 const Hero = () => {
@@ -35,11 +36,11 @@ const Hero = () => {
                                 </span>
 
                             </h1>
-                            <h1>Transforming Code into Impactful Solutions</h1>
+                            <h1>Transforming <span className='text-9xl text-blue-950'> Code</span> <br /> into Impactful Solutions</h1>
                             <h1>From Ideas to Real-World Applications</h1>
                         </div>
                         <p className=' text-white-50 relative md:text-xl pointer-events-none z-10 '>
-                            Hi, I'm Kevin, a passionate web and mobile developer based in TOGO, currently studying at IAI. I specialize in building functional, elegant, and performance-driven websites and apps. My mission? Turning lines of code into smart digital experiences that solve real problems.
+                            Hi, I'm Kevin, <br /> a passionate web and mobile developer based in TOGO, currently studying at IAI.
                         </p>
                         <Button
                             className='md:w-80 md:h-16  w-60 h-12 '
@@ -49,6 +50,11 @@ const Hero = () => {
 
                 </header>
                 {/* right 3d model  */}
+                <figure>
+                    <div className='hero-3d-layout' >
+                        <HeroExperience />
+                    </div>
+                </figure>
             </div>
 
         </section>
